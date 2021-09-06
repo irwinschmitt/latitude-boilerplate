@@ -4,6 +4,13 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
 import ProTip from "./ProTip";
+import { createTheme, ThemeProvider } from "@material-ui/core";
+
+export const theme = createTheme({
+  typography: {
+    fontFamily: ["Poppins"].join(","),
+  },
+});
 
 function Copyright() {
   return (
@@ -19,14 +26,16 @@ function Copyright() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v5-beta example with styled-components
-        </Typography>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="sm">
+        <Box sx={{ my: 4 }}>
+          <Typography variant="h4" component="h1" gutterBottom>
+            Create React App v5-beta example with styled-components
+          </Typography>
+          <ProTip />
+          <Copyright />
+        </Box>
+      </Container>
+    </ThemeProvider>
   );
 }
