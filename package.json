@@ -3,9 +3,9 @@
   "version": "5.0.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "next",
-    "@material-ui/lab": "next",
-    "@material-ui/styled-engine-sc": "next",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/styled-engine-sc": "^5.0.0-alpha.11",
     "react": "latest",
     "react-app-rewired": "latest",
     "react-dom": "latest",
