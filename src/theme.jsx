@@ -44,27 +44,28 @@ const theme = createTheme({
   typography: {
     htmlFontSize: 16,
     fontFamily: ["Poppins", "sans-serif"].join(","),
-    fontWeightLight: 300,
-    fontWeightRegular: 400,
-    fontWeightMedium: 500,
-    fontWeightBold: 700,
-    h1: {
-      fontWeight: 400,
-      fontSize: "6rem",
-      lineHeight: 72,
-    },
-    h2: {
-      fontWeight: 400,
-      fontSize: "3.75rem",
-    },
-    h3: {
-      fontWeight: 300,
-      fontSize: "3rem",
-    },
-    h4: {
-      fontWeight: 300,
-      fontSize: "2.12rem",
-    },
+    color: "#0C326F",
+    // fontWeightLight: 300,
+    // fontWeightRegular: 400,
+    // fontWeightMedium: 500,
+    // fontWeightBold: 700,
+    // h1: {
+    //   fontWeight: 400,
+    //   fontSize: "6rem",
+    //   lineHeight: "72px",
+    // },
+    // h2: {
+    //   fontWeight: 400,
+    //   fontSize: "3.75rem",
+    // },
+    // h3: {
+    //   fontWeight: 300,
+    //   fontSize: "3rem",
+    // },
+    // h4: {
+    //   fontWeight: 300,
+    //   fontSize: "2.12rem",
+    // },
   },
 });
 
