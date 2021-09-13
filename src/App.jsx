@@ -1,9 +1,7 @@
 import * as React from "react";
-import { createTheme, ThemeProvider } from "@material-ui/core";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
+import { createTheme } from "@material-ui/core";
 import Login from "./pages/Login";
+import MuiThemeProvider from "./theme";
 
 export const theme = createTheme({
   typography: {
@@ -13,8 +11,8 @@ export const theme = createTheme({
 
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <MuiThemeProvider theme={theme}>
       <Login />
-    </ThemeProvider>
+    </MuiThemeProvider>
   );
 }
