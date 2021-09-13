@@ -10,7 +10,7 @@ function Default({ children, ...rest }) {
     <>
       <Header />
 
-      <Container>{children}</Container>
+      <Container fullHeight>{children}</Container>
 
       <Footer />
     </>

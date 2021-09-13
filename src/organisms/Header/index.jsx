@@ -6,7 +6,7 @@ import Container from "../../atoms/Container";
 
 function Header() {
   return (
-    <MuiAppBar elevation="0" position="static">
+    <MuiAppBar elevation={0} position="static">
       <MuiToolbar>
         <Container>
           <MuiTypography variant="h6">

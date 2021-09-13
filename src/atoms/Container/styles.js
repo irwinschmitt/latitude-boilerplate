@@ -4,5 +4,6 @@ import MuiContainer from "@material-ui/core/Container";
 export const StyledContainer = styled(MuiContainer).attrs((props) => ({
   maxWidth: "lg",
 }))`
-  min-height: 100% !important;
+  /* height: calc(100vh - 128px); */
+  height: ${(props) => (props.fullHeight ? "calc(100vh - 128px)" : "inherit")};
 `;

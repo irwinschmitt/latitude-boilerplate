@@ -7,9 +7,6 @@ const useGlobalStyles = makeStyles({
     body: {
       height: "100vh",
     },
-    root: {
-      height: "100vh",
-    },
   },
 });
 

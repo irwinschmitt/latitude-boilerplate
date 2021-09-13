@@ -6,7 +6,7 @@ import Container from "../../atoms/Container";
 
 function Footer() {
   return (
-    <MuiAppBar elevation="0" position="static">
+    <MuiAppBar elevation={0} position="static">
       <MuiToolbar>
         <Container>
           <MuiTypography variant="body2" align="center">
