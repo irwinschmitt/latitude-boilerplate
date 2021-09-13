@@ -7,15 +7,17 @@ const useGlobalStyles = makeStyles({
     body: {
       height: "100vh",
     },
+    root: {
+      height: "100vh",
+    },
   },
 });
 
 const theme = createTheme({
   palette: {
     primary: {
-      dark: "#0C326F",
-      main: "#1351B4",
-      light: "#2670E8",
+      main: "#0C326F",
+      light: "#1351B4",
       blue300: "#5992ED",
       blue100: "#B5CFF7",
     },
