@@ -1,18 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledContainer } from "./styles";
+import MuiContainer from "@material-ui/core/Container";
 
-function Container({ children, fullheight, ...rest }) {
+function Container({ children, maxWidth, ...rest }) {
   return (
-    <StyledContainer fullheight={fullheight} {...rest}>
+    <MuiContainer maxWidth={maxWidth} {...rest}>
       {children}
-    </StyledContainer>
+    </MuiContainer>
   );
 }
 
 Container.propTypes = {
-  children: PropTypes.any,
-  fullheight: PropTypes.string,
+  children: PropTypes.node,
+  maxWidth: PropTypes.oneOf(["lg", "md", "sm", "xl", "xs", false]),
+};
+
+Container.defaultProps = {
+  children: undefined,
+  maxWidth: "lg",
 };
 
 export default Container;
