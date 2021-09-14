@@ -1,6 +1,6 @@
 import React from "react";
 import Default from "../../templates/Default";
-import TextField from "../../molecules/TextField";
+import TextField from "../../atoms/TextField";
 import Button from "../../atoms/Button";
 import MuiTypography from "@material-ui/core/Typography";
 import MuiBox from "@material-ui/core/Box";
