@@ -1,29 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import Header from "../../organisms/Header";
-import Container from "../../atoms/Container";
 import Footer from "../../organisms/Footer";
 import BodyHeight from "../../atoms/BodyHeight";
 
-function Default({ children, ...rest }) {
+function LoginTemplate({ children }) {
   return (
     <>
       <Header />
-      <BodyHeight>
-        <Container>{children}</Container>
-      </BodyHeight>
+      <BodyHeight>{children}</BodyHeight>
       <Footer />
     </>
   );
 }
 
-Default.propTypes = {
+LoginTemplate.propTypes = {
   children: PropTypes.node,
 };
 
-Default.defaultProps = {
+LoginTemplate.defaultProps = {
   children: undefined,
 };
 
-export default Default;
+export default LoginTemplate;
