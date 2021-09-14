@@ -1,17 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledButton, StyledBox } from "./styles";
+import { StyledButton } from "./styles";
 
-function Button(props) {
+function Button({ color, disableElevation, variant, children, ...rest }) {
   return (
-    <StyledButton {...props}>
-      <StyledBox>{props.children}</StyledBox>
+    <StyledButton
+      color={color}
+      disableElevation={disableElevation}
+      variant={variant}
+      {...rest}
+    >
+      {children}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
-  children: PropTypes.any,
+  onClick: PropTypes.func,
+  children: PropTypes.node,
+  variant: PropTypes.string,
+  color: PropTypes.oneOf(["default", "inherit", "primary", "secondary"]),
+  disableElevation: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  onClick: () => {},
+  children: undefined,
+  variant: "contained",
+  color: "primary",
+  disableElevation: true,
 };
 
 export default Button;
